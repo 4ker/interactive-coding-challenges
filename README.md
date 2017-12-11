@@ -1,3 +1,10 @@
+使用方法:
+
+0. 安装依赖: pip3 install -r requirements.txt
+1. 在本文件夹 `jupyter notebook`
+2. 打开 README.ipython
+3. 点击相应 challenge 和 solution 进入
+
 ## Notebook Structure
 
 Each challenge has two notebooks, a **challenge notebook** with unit tests for you to solve and a **solution notebook** for reference.
