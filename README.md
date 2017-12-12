@@ -5,41 +5,6 @@
 2. 打开 README.ipython
 3. 点击相应 challenge 和 solution 进入
 
-## Notebook Structure
-
-Each challenge has two notebooks, a **challenge notebook** with unit tests for you to solve and a **solution notebook** for reference.
-
-### Problem Statement
-
-* States the problem to solve.
-
-### Constraints
-
-* Describes any constraints or assumptions.
-
-### Test Cases
-
-* Describes the general and edge test cases that will be evaluated in the unit test.
-
-### Algorithm
-
-* [Challenge Notebook] Empty, refer to the solution notebook algorithm section if you need a hint.
-* [Solution Notebook] One or more algorithm solution discussions, with Big-O time and space complexities.
-
-### Hints
-
-* [Challenge Notebook] Provides on-demand [incremental hints](https://github.com/donnemartin/interactive-coding-challenges/issues/22) to help you arrive at the optimal solution.  Coming soon!
-
-### Code (Challenge: Implement Me!)
-
-* [Challenge Notebook] Skeleton code for you to implement.
-* [Solution Notebook] One or more reference solutions.
-
-### Unit Test
-
-* [Challenge Notebook] Unit test for your code.  Expected to fail until you solve the challenge.
-* [Solution Notebook] Unit test for the reference solution(s).
-
 ## Index
 
 ### Challenges Categories
@@ -137,10 +102,10 @@ Unit tested, fully functional implementations of the following algorithms:
 
 | Challenge | Static Notebook |
 |--------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------|
-| Determine if a string contains unique characters | [Challenge](arrays_strings/unique_chars/unique_chars_challenge.ipynb)│[Solution](arrays_strings/unique_chars/unique_chars_solution.ipynb) |
-| Determine if a string is a permutation of another | [Challenge](arrays_strings/permutation/permutation_challenge.ipynb)│[Solution](arrays_strings/permutation/permutation_solution.ipynb) |
-| Determine if a string is a rotation of another | [Challenge](arrays_strings/rotation/rotation_challenge.ipynb)│[Solution](arrays_strings/rotation/rotation_solution.ipynb) |
-| Compress a string | [Challenge](arrays_strings/compress/compress_challenge.ipynb)│[Solution](arrays_strings/compress/compress_solution.ipynb) |
+| DONE - Determine if a string contains unique characters | [Challenge](arrays_strings/unique_chars/unique_chars_challenge.ipynb)│[Solution](arrays_strings/unique_chars/unique_chars_solution.ipynb) |
+| DONE - Determine if a string is a permutation of another | [Challenge](arrays_strings/permutation/permutation_challenge.ipynb)│[Solution](arrays_strings/permutation/permutation_solution.ipynb) |
+| DONE - Determine if a string is a rotation of another | [Challenge](arrays_strings/rotation/rotation_challenge.ipynb)│[Solution](arrays_strings/rotation/rotation_solution.ipynb) |
+| DONE - Compress a string | [Challenge](arrays_strings/compress/compress_challenge.ipynb)│[Solution](arrays_strings/compress/compress_solution.ipynb) |
 | Reverse characters in a string | [Challenge](arrays_strings/reverse_string/reverse_string_challenge.ipynb)│[Solution](arrays_strings/reverse_string/reverse_string_solution.ipynb) |
 | Given two strings, find the single different char | [Challenge](arrays_strings/str_diff/str_diff_challenge.ipynb)│[Solution](arrays_strings/str_diff/str_diff_solution.ipynb) |
 | Find two indices that sum to a specific value | [Challenge](arrays_strings/two_sum/two_sum_challenge.ipynb)│[Solution](arrays_strings/two_sum/two_sum_solution.ipynb) |
@@ -163,8 +128,8 @@ Unit tested, fully functional implementations of the following algorithms:
 
 | Challenge | Static Notebook |
 |--------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------|
-| Remove duplicates from a linked list | [Challenge](linked_lists/remove_duplicates/remove_duplicates_challenge.ipynb)│[Solution](linked_lists/remove_duplicates/remove_duplicates_solution.ipynb) |
-| Find the kth to last element of a linked list | [Challenge](linked_lists/kth_to_last_elem/kth_to_last_elem_challenge.ipynb)│[Solution](linked_lists/kth_to_last_elem/kth_to_last_elem_solution.ipynb) |
+| DONE - Remove duplicates from a linked list | [Challenge](linked_lists/remove_duplicates/remove_duplicates_challenge.ipynb)│[Solution](linked_lists/remove_duplicates/remove_duplicates_solution.ipynb) |
+| DONE - Find the kth to last element of a linked list | [Challenge](linked_lists/kth_to_last_elem/kth_to_last_elem_challenge.ipynb)│[Solution](linked_lists/kth_to_last_elem/kth_to_last_elem_solution.ipynb) |
 | Delete a node in the middle of a linked list | [Challenge](linked_lists/delete_mid/delete_mid_challenge.ipynb)│[Solution](linked_lists/delete_mid/delete_mid_solution.ipynb) |
 | Partition a linked list around a given value | [Challenge](linked_lists/partition/partition_challenge.ipynb)│[Solution](linked_lists/partition/partition_solution.ipynb) |
 | Add two numbers whose digits are stored in a linked list | [Challenge](linked_lists/add_reverse/add_reverse_challenge.ipynb)│[Solution](linked_lists/add_reverse/add_reverse_solution.ipynb) |
@@ -357,170 +322,3 @@ Unit tested, fully functional implementations of the following algorithms:
 | Utopian tree | [Challenge](online_judges/utopian_tree/utopian_tree_challenge.ipynb)│[Solution](online_judges/utopian_tree/utopian_tree_solution.ipynb) |
 | Maximizing xor | [Challenge](online_judges/maximizing_xor/maximizing_xor_challenge.ipynb)│[Solution](online_judges/maximizing_xor/maximizing_xor_solution.ipynb) |
 | Add a challenge | [Contribute](https://github.com/donnemartin/interactive-coding-challenges/blob/master/CONTRIBUTING.md)│[Contribute](https://github.com/donnemartin/interactive-coding-challenges/blob/master/CONTRIBUTING.md) |
-
-## Repo Structure
-
-```
-interactive-coding-challenges        # Repo
-├─ arrays_strings                    # Category of challenges
-│  ├─ rotation                       # Challenge folder
-│  │  ├─ rotation_challenge.ipynb    # Challenge notebook
-│  │  ├─ rotation_solution.ipynb     # Solution notebook
-│  │  ├─ test_rotation.py            # Unit test*
-│  ├─ compress
-│  │  ├─ compress_challenge.ipynb
-│  │  ├─ compress_solution.ipynb
-│  │  ├─ test_compress.py
-│  ├─ ...
-├─ linked_lists
-│  ├─ palindrome
-│  │  └─ ...
-│  ├─ ...
-├─ ...
-```
-
-<i>\*The notebooks (.ipynb) read/write the associated unit test (.py) file.</i>
-
-
-## Notebook Installation
-
-### IPython Notebook
-
-If you already have Python installed and are familiar with installing packages, you can get IPython Notebook with pip:
-
-```
-pip install "ipython[notebook]"
-```
-
-If you run into an issue about pyzmq, refer to the following [Stack Overflow post](http://stackoverflow.com/questions/24995438/pyzmq-missing-when-running-ipython-notebook) and run:
-
-```
-pip uninstall ipython
-pip install "ipython[all]"
-```
-
-As an alternative, you can also use the provided ```requirements.txt``` file:
-
-```
-pip install -r requirements.txt
-```
-
-For detailed instructions, scripts, and tools to more optimally set up your development environment, check out the [dev-setup](https://github.com/donnemartin/dev-setup) repo.
-
-For more details on notebook installation, follow the directions [here](http://ipython.org/install.html).
-
-More information on IPython/Jupyter Notebooks can be found [here](http://ipython.org/notebook.html).
-
-### Nose Tests
-
-Install nose using setuptools/distribute:
-
-```
-easy_install nose
-```
-
-or
-
-```
-pip install nose
-```
-
-More information on Nose can be found [here](https://nose.readthedocs.org/en/latest/).
-
-## Running Challenges
-
-### Notebooks
-
-Challenges are provided in the form of **IPython/Jupyter Notebooks** and have been **tested with Python 2.7 and Python 3.x**.
-
-*If you need to install IPython/Jupyter Notebook, see the [Notebook Installation](#notebook-installation) section.*
-
-* This README contains links to [nbviewer](http://nbviewer.ipython.org), which hosts **static notebooks** of the repo's contents
-* To interact with or to modify elements within the **dynamic notebooks**, refer to the instructions below
-
-Run the notebook of challenges:
-
-```
-$ git clone https://github.com/donnemartin/interactive-coding-challenges.git
-$ cd interactive-coding-challenges
-$ jupyter notebook
-```
-
-This will launch your web browser with the list of challenge categories:
-
-* Navigate to the **Challenge Notebook** you wish to solve
-* Run the cells within the challenge notebook (Cell->Run All)
-    * This will result in an expected unit test error
-* Solve the challenge and verify it passes the unit test
-* Check out the accompanying **Solution Notebook** for further discussion
-
-To **debug** your solution with pdb, refer to the following [ticket](https://github.com/donnemartin/interactive-coding-challenges/issues/11).
-
-Note: If your solution is different from those listed in the Solution Notebook, consider submitting a pull request so others can benefit from your work.  Review the [Contributing Guidelines](https://github.com/donnemartin/interactive-coding-challenges/blob/master/CONTRIBUTING.md) for details.
-
-## Future Development
-
-Challenges, solutions, and unit tests are presented in the form of **IPython/Jupyter Notebooks**.
-
-* Notebooks currently contain mostly Python solutions (tested on both Python 2.7 and Python 3.x), but can be extended to include [40+ supported languages](https://github.com/ipython/ipython/wiki/IPython-kernels-for-other-languages)
-* Repo will be **continually updated** with new solutions and challenges
-* [Contributions](https://github.com/donnemartin/interactive-coding-challenges/blob/master/CONTRIBUTING.md) are welcome!
-
-## Contributing
-
-Contributions are welcome!
-
-Review the [Contributing Guidelines](https://github.com/donnemartin/interactive-coding-challenges/blob/master/CONTRIBUTING.md) for details on how to:
-
-* Submit issues
-* Add solutions to existing challenges
-* Add new challenges
-
-## Credits
-
-### Resources
-
-* [Cracking the Coding Interview](http://www.amazon.com/Cracking-Coding-Interview-Programming-Questions/dp/098478280X) | [GitHub Solutions](https://github.com/gaylemcd/ctci)
-* [Programming Interviews Exposed](http://www.amazon.com/gp/product/1118261364/)
-* [The Algorithm Design Manual](http://www.amazon.com/Algorithm-Design-Manual-Steve-Skiena/dp/0387948600) | [Solutions](http://www.algorithm.cs.sunysb.edu/algowiki/index.php/The_Algorithms_Design_Manual_(Second_Edition))
-* [CareerCup](http://www.careercup.com/)
-* [Quora](http://www.quora.com/)
-* [HackerRank](https://www.hackerrank.com)
-* [LeetCode](https://leetcode.com/)
-
-### Images
-
-* [Arrays and Strings: nltk.org](http://www.nltk.org/images/string-slicing.png)
-* [Linked Lists: wikipedia.org](https://upload.wikimedia.org/wikipedia/commons/6/6d/Singly-linked-list.svg)
-* [Stacks: wikipedia.org](https://upload.wikimedia.org/wikipedia/commons/2/29/Data_stack.svg)
-* [Queues: wikipedia.org](https://upload.wikimedia.org/wikipedia/commons/5/52/Data_Queue.svg)
-* [Sorting: wikipedia.org](https://upload.wikimedia.org/wikipedia/commons/6/6a/Sorting_quicksort_anim.gif)
-* [Recursion and Dynamic Programming: wikipedia.org](https://upload.wikimedia.org/wikipedia/commons/b/bf/PascalTriangleFibanacci.svg)
-* [Graphs and Trees: wikipedia.org](https://upload.wikimedia.org/wikipedia/commons/f/f7/Binary_tree.svg)
-* [Mathematics and Probability: wikipedia.org](https://upload.wikimedia.org/wikipedia/commons/d/d2/Gaussian_distribution_2.jpg)
-* [Bit Manipulation: wikipedia.org](https://upload.wikimedia.org/wikipedia/commons/5/5c/Rotate_left_logically.svg)
-* [Online Judges: topcoder.com](https://www.topcoder.com/wp-content/uploads/2014/05/topcoder_logo_home_sm.png)
-
-## Contact Info
-
-Feel free to contact me to discuss any issues, questions, or comments.
-
-My contact info can be found on my [GitHub page](https://github.com/donnemartin).
-
-## License
-
-*I am providing code and resources in this repository to you under an open source license.  Because this is my personal repository, the license you receive to my code and resources is from me and not my employer (Facebook).*
-
-    Copyright 2015 Donne Martin
-
-    Licensed under the Apache License, Version 2.0 (the "License");
-    you may not use this file except in compliance with the License.
-    You may obtain a copy of the License at
-
-       http://www.apache.org/licenses/LICENSE-2.0
-
-    Unless required by applicable law or agreed to in writing, software
-    distributed under the License is distributed on an "AS IS" BASIS,
-    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-    See the License for the specific language governing permissions and
-    limitations under the License.
